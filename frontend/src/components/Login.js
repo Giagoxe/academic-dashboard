@@ -1,52 +1,42 @@
 import React, { useState } from 'react';
 
-const Login = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
+const IniciarSesión = () => {
+  const [nombreUsuario, setNombreUsuario] = useState('');
+  const [contraseña, setContraseña] = useState('');
+  const [error, setError] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Logic for authentication
-        if (username === 'test' && password === 'password') {
-            console.log('Login successful');
-            setError('');
-        } else {
-            setError('Invalid credentials');
-        }
-    };
+  const manejarEnvío = (e) => {
+    e.preventDefault();
+    // Lógica para autenticación
+    if (nombreUsuario === 'prueba' && contraseña === 'contraseña') {
+      console.log('Sesión iniciada exitosamente');
+      setError('');
+    } else {
+      setError('Credenciales inválidas');
+    }
+  };
 
-    return (
+  return (
+    <div>
+      <h2>Iniciar Sesión</h2>
+      <form onSubmit={manejarEnvío}>
         <div>
-            <h2>Login</h2>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label>
-                        Username:
-                        <input
-                            type="text"
-                            value={username}
-                            onChange={(e) => setUsername(e.target.value)}
-                            required
-                        />
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        Password:
-                        <input
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            required
-                        />
-                    </label>
-                </div>
-                {error && <p style={{ color: 'red' }}>{error}</p>}
-                <button type="submit">Login</button>
-            </form>
+          <label>
+            Nombre de Usuario:
+            <input type="text" value={nombreUsuario} onChange={(e) => setNombreUsuario(e.target.value)} required />
+          </label>
         </div>
-    );
+        <div>
+          <label>
+            Contraseña:
+            <input type="password" value={contraseña} onChange={(e) => setContraseña(e.target.value)} required />
+          </label>
+        </div>
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+    </div>
+  );
 };
 
-export default Login;
+export default IniciarSesión;
