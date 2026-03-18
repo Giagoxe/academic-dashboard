@@ -1,46 +1,50 @@
-# Installation Instructions for Academic Dashboard
+# Instrucciones de Instalación para Panel de Control Académico
 
-## Prerequisites
-Before you begin, ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (version 14 or higher)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
-- A code editor such as [Visual Studio Code](https://code.visualstudio.com/)
+## Requisitos Previos
+Antes de comenzar, asegúrate de tener lo siguiente instalado:
+- [Node.js](https://nodejs.org/) (versión 14 o superior)
+- [npm](https://www.npmjs.com/) (viene con Node.js)
+- Un editor de código como [Visual Studio Code](https://code.visualstudio.com/)
 
-## Step 1: Clone the Repository
-Open your terminal and run the following command to clone the repository:
+## Paso 1: Clonar el Repositorio
+Abre tu terminal y ejecuta el siguiente comando para clonar el repositorio:
+
 ```bash
 git clone https://github.com/Giagoxe/academic-dashboard.git
 ```
 
-## Step 2: Navigate to the Project Directory
-Change to the project directory:
+## Paso 2: Navegar al Directorio del Proyecto
+Cambia al directorio del proyecto:
+
 ```bash
 cd academic-dashboard
 ```
 
-## Step 3: Install Dependencies
-Run the following command to install all necessary dependencies:
+## Paso 3: Instalar Dependencias
+Ejecuta el siguiente comando para instalar todas las dependencias necesarias:
+
 ```bash
 npm install
 ```
 
-## Step 4: Set Up Environment Variables
-Create a `.env` file in the root of the project directory. You can use the `.env.example` file as a template. 
-Add the required variables according to your configuration.
+## Paso 4: Configurar Variables de Entorno
+Crea un archivo `.env` en la raíz del directorio del proyecto. Puedes usar el archivo `.env.example` como plantilla. Agrega las variables requeridas según tu configuración.
 
-## Step 5: Run the Project
-To start the development server, use:
+## Paso 5: Ejecutar el Proyecto
+Para iniciar el servidor de desarrollo, usa:
+
 ```bash
 npm start
 ```
 
-Your application should now be running at `http://localhost:3000`.
+Tu aplicación ahora debe estar ejecutándose en `http://localhost:3000`.
 
-## Step 6: Build for Production
-If you need to create a production build, run:
+## Paso 6: Construir para Producción
+Si necesitas crear una compilación de producción, ejecuta:
+
 ```bash
 npm run build
 ```
 
-## Additional Information
-For any issues or requests, feel free to raise an issue in the repository.
+## Información Adicional
+Para cualquier problema o solicitud, siéntete libre de crear un problema en el repositorio.
