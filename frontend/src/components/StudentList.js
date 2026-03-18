@@ -1,0 +1,1 @@
+import React from 'react';\n\nconst StudentList = ({ students }) => {\n    return (\n        <div>\n            <h1>Student List</h1>\n            <ul>\n                {students.map((student, index) => (\n                    <li key={index}>{student.name}</li>\n                ))}\n            </ul>\n        </div>\n    );\n};\n\nexport default StudentList;
