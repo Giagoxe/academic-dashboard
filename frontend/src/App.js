@@ -6,12 +6,12 @@ const App = () => {
         <Router>
             <Switch>
                 <Route path="/" exact>
-                    <h1>Welcome to the Academic Dashboard</h1>
+                    <h1>Bienvenido al Panel de Control Académico</h1>
                 </Route>
-                <Route path="/about">
-                    <h1>About Page</h1>
+                <Route path="/acerca-de">
+                    <h1>Página Acerca de</h1>
                 </Route>
-                {/* Add more routes as needed */}
+                {/* Agregar más rutas según sea necesario */}
             </Switch>
         </Router>
     );
