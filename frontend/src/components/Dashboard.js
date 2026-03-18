@@ -1,30 +1,30 @@
 import React from 'react';
 
 const Dashboard = () => {
-    // Sample data, adjust as needed
-    const studentStats = [
-        { name: 'Alice', grade: 'A', attendance: '95%' },
-        { name: 'Bob', grade: 'B', attendance: '90%' },
-        { name: 'Charlie', grade: 'C', attendance: '85%' }
+    // Datos de ejemplo, ajustar según sea necesario
+    const estadísticasEstudiantes = [
+        { nombre: 'Alice', calificación: 'A', asistencia: '95%' },
+        { nombre: 'Bob', calificación: 'B', asistencia: '90%' },
+        { nombre: 'Charlie', calificación: 'C', asistencia: '85%' }
     ];
 
     return (
         <div>
-            <h1>Student Statistics and Grades Overview</h1>
+            <h1>Resumen de Estadísticas y Calificaciones de Estudiantes</h1>
             <table>
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Grade</th>
-                        <th>Attendance</th>
+                        <th>Nombre</th>
+                        <th>Calificación</th>
+                        <th>Asistencia</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {studentStats.map((student, index) => (
-                        <tr key={index}>
-                            <td>{student.name}</td>
-                            <td>{student.grade}</td>
-                            <td>{student.attendance}</td>
+                    {estadísticasEstudiantes.map((estudiante, índice) => (
+                        <tr key={índice}>
+                            <td>{estudiante.nombre}</td>
+                            <td>{estudiante.calificación}</td>
+                            <td>{estudiante.asistencia}</td>
                         </tr>
                     ))}
                 </tbody>
